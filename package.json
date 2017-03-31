@@ -1,0 +1,19 @@
+{
+  "name": "notforgotten",
+  "version": "1.0.0",
+  "description": "The web page of Notforgotten OTS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Macikolej/notforgotten.git"
+  },
+  "author": "Maciej Olejnik & Wojciech Olejnik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Macikolej/notforgotten/issues"
+  },
+  "homepage": "https://github.com/Macikolej/notforgotten#readme"
+}
