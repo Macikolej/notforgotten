@@ -1,4 +1,5 @@
 const path = require('path');
+const bodyParser = require('body-parser');
 const express = require('express');
 const expressHandlebars = require('express-handlebars');
 const passport = require('passport');
@@ -10,6 +11,10 @@ const config = require('../config');
 
 require('./authentication').init();
 let app = express();
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
 app.use(session({
   key: config.session.key,

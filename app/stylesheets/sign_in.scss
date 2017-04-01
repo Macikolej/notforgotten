@@ -1,0 +1,31 @@
+.sign-in {
+  margin-top: 60px;
+
+  &__label-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__show-password {
+    color: lightgray;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .back-btn,
+    .login-btn {
+      width: 125px
+    }
+
+    .login-btn {
+      margin-left: 10px;
+    }
+
+    .back-btn {
+      margin-right: 10px;
+    }
+  }
+}

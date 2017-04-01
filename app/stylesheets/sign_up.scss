@@ -1,0 +1,35 @@
+.sign-up {
+  margin-top: 60px;
+
+  &__label-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__password-confirmation {
+    margin-top: 10px;
+  }
+
+  &__show-password {
+    color: lightgray;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    .back-btn,
+    .signup-btn {
+      width: 125px
+    }
+
+    .signup-btn {
+      margin-left: 10px;
+    }
+
+    .back-btn {
+      margin-right: 10px;
+    }
+  }
+}
