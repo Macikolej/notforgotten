@@ -1,4 +1,5 @@
 const Account = require('./model');
+const Character = require('../characters').model;
 
 const sign_in = (req, res) => {
   res.redirect('/account');
@@ -18,4 +19,14 @@ const sign_up = (req, res) => {
   });
 };
 
-module.exports = { sign_in, sign_up }
+const show = (req, res) => {
+  Character.forAccount(req.user.id, (error, characters) => {
+    if (error) {
+      console.log(error);
+      res.redirect('/');
+    }
+    res.render('character_list', { characters });
+  });
+};
+
+module.exports = { sign_in, sign_up, show }
