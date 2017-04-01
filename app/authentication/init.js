@@ -1,5 +1,5 @@
 const passport = require('passport');
-const hash = require('crypto').createHash('sha1');
+const crypto = require('crypto');
 const LocalStrategy = require('passport-local').Strategy;
 const Account = require('../accounts').model;
 const authenticationMiddleware = require('./middleware');
@@ -28,7 +28,7 @@ const init = () => {
       if (!account) {
         return done(null, false);
       }
-      if (hash.update(password).digest('hex') !== account.password) {
+      if (crypto.createHash('sha1').update(password).digest('hex') !== account.password) {
         return done(null, false);
       }
       return done(null, account);
