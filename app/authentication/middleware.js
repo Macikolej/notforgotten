@@ -1,3 +1,5 @@
+const passport = require('passport');
+
 const authenticationMiddleware = () => {
   return (req, res, next) => {
     if (req.isAuthenticated()) {

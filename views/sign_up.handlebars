@@ -1,0 +1,40 @@
+<div class="main container-fluid">
+  <div class="row">
+    <div class="topbar col-xs-12"> WELCOME TO NOTFORGOTTEN SERVER </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="sign-up">
+        <form action="/sign_up" method="post">
+          <div class="form-group">
+            <div class="sign-up__label-container">
+              <label for="account_name">Account name</label>
+            </div>
+            <input type="text" class="form-control" name="account_name" placeholder="Your account name">
+          </div>
+          <div class="form-group">
+            <div class="sign-up__label-container">
+              <label for="email">Email address</label>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Your email address">
+          </div>
+          <div class="form-group">
+            <div class="sign-up__label-container">
+              <label for="password">Password</label>
+            </div>
+            <input type="password" class="form-control" name="password" placeholder="Password">
+            <input type="password" class="form-control sign-up__password-confirmation" name="password_confirmation" placeholder="Password confirmation">
+          </div>
+          <div>
+            <input onchange="showPassword(this)" type="checkbox">
+            <label class="sign-up__show-password">Show password</label> <!-- TODO: Show password currently broken -->
+          </div>
+          <div class="sign-up__buttons">
+            <a href="/" class="btn btn-danger btn-lg back-btn">Back</a>
+            <button type="submit" class="btn btn-success btn-lg signup-btn">Sign up!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

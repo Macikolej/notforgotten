@@ -1,24 +1,21 @@
 <div class="main container-fluid">
-  <div id="hud" class="row">
-    <div id="ui" class="col-xs-12"> WELCOME TO NOTFORGOTTEN SERVER </div>
+  <div class="row">
+    <div class="topbar col-xs-12"> WELCOME TO NOTFORGOTTEN SERVER </div>
   </div>
-  <div id="action" class="row">
-    <div id="pojemnik-na-formularz" class="col-xs-5 col-xs-offset-4">
-      <div class="start-formularz">
-        <p class="paragraf-lg"> Dołącz do grona bohaterów! </p>
-        <div class="pojemnik-na-przycisk">
-          <button onclick="rejestracja()" type="button" class="btn btn-warning start-button">Zajerestruj się!</button>
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <div class="home">
+        <div class="home__title">Join the Legion of Heroes!</div>
+        <div class="home__signup-container">
+          <a href="/sign_up" class="btn btn-warning signup-btn">Sign up!</a>
         </div>
-        <div class="pojemnik-na-paragraf">
-          <p class="paragraf-md"> Jeśli masz już konto: </p>
-          <div id="#pojemnik-na-przycisk-logowania">
-            <button onclick="logowanie()" id="przycisk-logowania" type="button" class="btn btn-success">Zaloguj się!</button>
-          </div>
+        <div class="home__login-container">
+          <p>If you already have an account:</p>
+          <a href="/sign_in" class="home__login-btn">
+            <div class="btn btn-success ">Sign in!</div>
+          </a>
         </div>
       </div>
     </div>
-  </div>
-  <div id="bottom" class="row">
-    <div class="bottom-nothing"> </div>
   </div>
 </div>
