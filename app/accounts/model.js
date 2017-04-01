@@ -1,18 +1,30 @@
+const DB = require('../services').DB;
+
 class Account {
-  static findBy(params, callback) {
-    return callback(null, {
-      id: 1,
-      name: 'test',
-      password: 'test',
-    });
+  static findByAccountName(accountName, callback) {
+    DB.connection.query(
+      'SELECT * FROM accounts WHERE name = ?',
+      [accountName],
+      (error, results, fields) => {
+        if (error) {
+          return callback(error, null);
+        }
+        return callback(null, results[0]);
+      }
+    );
   }
 
   static find(id, callback) {
-    return callback(null, {
-      id: 1,
-      name: 'test',
-      password: 'test',
-    });
+    DB.connection.query(
+      'SELECT * FROM accounts WHERE id = ?',
+      [id],
+      (error, results, fields) => {
+        if (error) {
+          return callback(error, null);
+        }
+        return callback(null, results[0]);
+      }
+    );
   }
 }
 
