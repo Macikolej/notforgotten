@@ -1,16 +1,16 @@
 const Character = require('./model');
 
 const create = (req, res) => {
-  const account_id = req.user.id;
-  const { name } = req.body;
-  if (!name) {
-    return res.redirect('/character_list');
+  const accountId = req.user.id;
+  const { name, gender } = req.body;
+  if (!name || !gender) {
+    return res.redirect('/account');
   }
-  Character.create(account_id, name, (error, character) => {
+  Character.create(accountId, name, gender, (error, character) => {
     if (error) {
       console.log(error);
     }
-    res.redirect('/character_list');
+    res.redirect('/account');
   });
 };
 

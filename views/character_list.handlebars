@@ -12,11 +12,13 @@
    <tbody>
     {{#each characters}}
        <tr>
-         <td class="active characters__cell">Macikolej</td>
-         <td class="success characters__cell"> Sorcerer </td>
-         <td class="info characters__cell"> 80 </td>
-         <td class="warning characters__cell"> Carlin </td>
-         <td class="danger characters__cell"> <button type="button" class="btn btn-danger">Delete</button> </td>
+         <td class="active characters__cell">{{ name }}</td>
+         <td class="success characters__cell">{{ vocation }}</td>
+         <td class="info characters__cell">{{ level }}</td>
+         <td class="warning characters__cell">{{ town_id }}</td>
+         <td class="danger characters__cell">
+          <button type="button" class="btn btn-danger">Delete</button>
+        </td>
        </tr>
     {{/each}}
      <tr>

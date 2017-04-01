@@ -1,11 +1,18 @@
 <div class="col-xs-6 col-xs-offset-3">
-  <div class="new-character">
+  <div class="characters__new">
     <form action="/characters" method="post">
       <div class="form-group">
         <label for="name">Character name</label>
         <input type="text" name="name" class="form-control" placeholder="Character name">
       </div>
-      <a href="/character_list" class="btn btn-danger button-register btn-lg">Back</a>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select name="gender" class="form-control">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+      <a href="/account" class="btn btn-danger button-register btn-lg">Back</a>
       <button type="submit" class="btn btn-success button-register btn-lg">Create character</button>
     </form>
   </div>
