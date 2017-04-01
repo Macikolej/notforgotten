@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Macikolej/notforgotten#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.2",
-    "mysql": "^2.13.0"
+    "express-mysql-session": "^1.2.0",
+    "express-session": "^1.15.2",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2"
   }
 }
