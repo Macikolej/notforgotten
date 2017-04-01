@@ -1,5 +1,5 @@
 const routes = (app) => {
-  app.get('/', (req, res) => { console.log('serving /') });
+  app.get('/', (req, res) => { res.render('home') });
   return app;
 };
 
