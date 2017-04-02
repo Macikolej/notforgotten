@@ -19,7 +19,7 @@ class Character {
       name,
       sex: gender === 'female' ? 0 : 1,
       account_id: accountId,
-      cap: 100,
+      cap: 200,
       town_id: 1,
       conditions: '',
     }
