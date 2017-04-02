@@ -1,0 +1,16 @@
+.characters {
+  margin-top: 60px;
+
+  &__cell {
+    text-align: center;
+  }
+
+  &__new {
+    background-image: url(https://www.androidcentral.com/sites/androidcentral.com/files/styles/w550h500/public/wallpapers/color-gradient-1uw.jpg?itok=UR__GSnf);
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    margin-top: 60px;
+    padding: 40px 0 60px;
+  }
+}

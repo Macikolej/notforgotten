@@ -1,33 +1,26 @@
-<div class="main container-fluid">
-  <div class="row">
-    <div class="topbar col-xs-12"> WELCOME TO NOTFORGOTTEN SERVER </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6 col-xs-offset-3">
-      <div class="sign-in">
-        <form action="/sign_in" method="post">
-          <div class="form-group">
-            <div class="sign-in__label-container">
-              <label for="account_name">Account name</label>
-            </div>
-            <input name="account_name" type="text" class="form-control" placeholder="Enter your account name">
-          </div>
-          <div class="form-group">
-            <div class="sign-in__label-container">
-              <label for="password">Password</label>
-            </div>
-            <input name="password" type="password" class="form-control" placeholder="Enter your password">
-          </div>
-          <div>
-            <input onchange="showPassword(this)" type="checkbox">
-            <label class="sign-in__show-password">Show password</label> <!-- TODO: Show password currently broken -->
-          </div>
-          <div class="sign-in__buttons">
-            <a href="/" class="btn btn-danger btn-lg back-btn">Back</a>
-            <button type="submit" class="btn btn-success btn-lg login-btn">Log in!</button>
-          </div>
-        </form>
+<div class="col-xs-6 col-xs-offset-3">
+  <div class="sign-in">
+    <form action="/sign_in" method="post">
+      <div class="form-group">
+        <div class="sign-in__label-container">
+          <label for="account_name">Account name</label>
+        </div>
+        <input name="account_name" type="text" class="form-control" placeholder="Enter your account name">
       </div>
-    </div>
+      <div class="form-group">
+        <div class="sign-in__label-container">
+          <label for="password">Password</label>
+        </div>
+        <input name="password" type="password" class="form-control" placeholder="Enter your password">
+      </div>
+      <div>
+        <input onchange="showPassword(this)" type="checkbox">
+        <label class="sign-in__show-password">Show password</label> <!-- TODO: Show password currently broken -->
+      </div>
+      <div class="sign-in__buttons">
+        <a href="/" class="btn btn-danger btn-lg back-btn">Back</a>
+        <button type="submit" class="btn btn-success btn-lg login-btn">Log in!</button>
+      </div>
+    </form>
   </div>
 </div>

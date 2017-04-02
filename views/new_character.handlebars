@@ -1,15 +1,19 @@
-<div class="body-create">
-  <div id="action" class="row">
-    <div id="pojemnik-na-formularz" class="col-xs-5 col-xs-offset-4">
-      <div class="createformularz">
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Character name</label>
-            <input type="text" class="form-control" id="charactername" placeholder="Character name">
-          </div>
-          <button type="submit" class="btn btn-success button-register btn-lg">Utwórz postać</button>
-        </form>
+<div class="col-xs-6 col-xs-offset-3">
+  <div class="characters__new">
+    <form action="/characters" method="post">
+      <div class="form-group">
+        <label for="name">Character name</label>
+        <input type="text" name="name" class="form-control" placeholder="Character name">
       </div>
-    </div>
+      <div class="form-group">
+        <label for="gender">Gender</label>
+        <select name="gender" class="form-control">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+      </div>
+      <a href="/account" class="btn btn-danger button-register btn-lg">Back</a>
+      <button type="submit" class="btn btn-success button-register btn-lg">Create character</button>
+    </form>
   </div>
 </div>
