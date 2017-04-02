@@ -1,8 +1,8 @@
 function showPassword(status) {
   if (status.checked) {
-    document.getElementById('hasło').type = "text"
+    document.getElementById('password').type = "text"
   }
   else {
-    document.getElementById('hasło').type = "password"
+    document.getElementById('password').type = "password"
   }
 }
